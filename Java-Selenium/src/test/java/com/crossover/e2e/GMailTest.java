@@ -7,7 +7,7 @@ import junit.framework.TestCase;
 import org.junit.Test;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
-
+//Updating content of this class
 
 public class GMailTest extends TestCase {
     private WebDriver driver;
@@ -45,6 +45,7 @@ public class GMailTest extends TestCase {
         passwordElement.sendKeys(properties.getProperty("password"));
         driver.findElement(By.id("passwordNext")).click();
 
+        Thread.sleep(1000);
         Thread.sleep(1000);
 
         WebElement composeElement = driver.findElement(By.xpath("//*[@role='button' and (.)='COMPSE']"));
